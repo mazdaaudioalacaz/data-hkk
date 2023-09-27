@@ -1,4 +1,5 @@
 name: Azure Static Web Apps CI/CD
+skip_app_build: true
 
 on:
   push:
@@ -43,4 +44,3 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GREEN_GLACIER_07AE2FC10 }}
           action: "close"
-     skip_app_build: true
